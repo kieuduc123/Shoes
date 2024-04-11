@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 // import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+// import { Autoplay, Pagination, Navigation } from "swiper/modules";
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
 import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
                     className="vh-75 vh-lg-60  container-fluid rounded overflow-hidden"
                     data-aos="fade-in"
                 >
-                    <div
+                    {/* <div
                         className="swiper-container overflow-hidden overflow-lg-visible"
                         spaceBetween={25}
                         slidesPerView={4}
@@ -28,7 +28,7 @@ const HomePage = () => {
                     >
                         <div className="">
                             <div className="swiper-wrapper slider-banner">
-                                {/* <SwiperSlide className="swiper-slide position-relative h-100 w-100">
+                                <SwiperSlide className="swiper-slide position-relative h-100 w-100">
                                     <div className="w-100 h-100 overflow-hidden position-absolute z-index-1 top-0 start-0 end-0 bottom-0">
                                         <div
                                             className="w-100 h-100 bg-img-cover bg-pos-center-center overflow-hidden"
@@ -65,12 +65,12 @@ const HomePage = () => {
                                             </NavLink>
                                         </div>
                                     </div>
-                                </SwiperSlide> */}
+                                </SwiperSlide>
                             </div>
                         </div>
 
                         <div className="swiper-pagination swiper-pagination-bullet-light"></div>
-                    </div>
+                    </div> */}
                 </section>
 
                 <div
