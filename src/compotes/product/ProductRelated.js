@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import Api from "sever/Api";
 import url from "sever/url";
 import { NavLink, useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { SwiperSlide } from "swiper/react";
 
 const ProductRelated = () => {
     const { id } = useParams();
@@ -20,7 +19,7 @@ const ProductRelated = () => {
     };
     useEffect(() => {
         relatedProduct();
-    }, id);
+    }, [id, relatedProduct]);
     return (
         // <Swiper
         //     className="swiper-container overflow-hidden overflow-lg-visible"
