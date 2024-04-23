@@ -2,11 +2,7 @@ import React, { useEffect, useState } from "react";
 import Api from "sever/Api";
 import url from "sever/url";
 import { NavLink, useParams } from "react-router-dom";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-// import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
+import { SwiperSlide } from "swiper/react";
 
 const ProductRelated = () => {
     const { id } = useParams();
@@ -23,7 +19,7 @@ const ProductRelated = () => {
     };
     useEffect(() => {
         relatedProduct();
-    }, id);
+    }, [id, relatedProduct]);
     return (
         // <Swiper
         //     className="swiper-container overflow-hidden overflow-lg-visible"
@@ -102,7 +98,7 @@ const ProductRelated = () => {
             <div className="swiper-next top-50 end-0 z-index-30 cursor-pointer transition-all bg-white px-3 py-4 position-absolute z-index-30 top-50 end-0 mt-n8 d-flex justify-content-center align-items-center opacity-50-hover">
                 <i className="ri-arrow-right-s-line ri-lg"></i>
             </div>
-            </>
+        </>
         // </Swiper>
     );
 };
